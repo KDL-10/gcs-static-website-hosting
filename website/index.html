@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive static website hosted with Google Cloud Storage.">
+  <title>Cloud Storage Static Website</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CloudSite home"><span class="brand-mark">☁</span> CloudSite</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GOOGLE CLOUD STORAGE PROJECT</p>
+        <h1>A simple website.<br><span>Hosted in the cloud.</span></h1>
+        <p class="intro">A responsive static website deployed to Google Cloud Storage using the Google Cloud CLI.</p>
+        <a class="primary-button" href="#about">Explore the project <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="cloud-art" aria-hidden="true">
+        <div class="cloud">☁</div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="cloud-caption">STORAGE • DEPLOY • DELIVER</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">ABOUT THIS DEMO</p>
+      <h2>Static hosting made practical</h2>
+      <p class="section-copy">This demo shows how website files can be stored in a Cloud Storage bucket and made available to visitors. It uses browser technologies only—there is no server-side application.</p>
+    </section>
+
+    <section class="section feature-section" id="services">
+      <p class="eyebrow">PROJECT FEATURES</p>
+      <h2>What this project demonstrates</h2>
+      <div class="feature-grid">
+        <article class="feature-card"><span>01</span><h3>Cloud Storage</h3><p>Store and organize static website files in a cloud bucket.</p></article>
+        <article class="feature-card"><span>02</span><h3>IAM permissions</h3><p>Manage public object access through bucket-level IAM.</p></article>
+        <article class="feature-card"><span>03</span><h3>CLI deployment</h3><p>Upload and update files using repeatable command-line scripts.</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">BUILT AS A CLOUD PORTFOLIO PROJECT</p><h2>Learn by building.</h2><p>Google Cloud Storage · HTML · CSS · JavaScript · gcloud CLI</p></div>
+      <button class="copy-button" id="copyProject" type="button">Copy project name</button>
+    </section>
+  </main>
+
+  <footer><span>CloudSite Demo</span><span>Hosted with Google Cloud Storage</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
